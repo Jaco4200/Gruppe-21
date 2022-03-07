@@ -7,15 +7,16 @@ ____,-------------------------,____
 
 /* Colors
 // ---------------------*/
-.color-1 {background: #C7D6BA;} /* color desc goes over here */
-.color-2 {background: #BAE3C2;} 
-.color-3 {background: #C7EDC2;} 
-.color-4 {background: #E5EDC2;}
-.color-5 {background: #E3E1BA;}
+.color-1 {background: #444059;} /* color desc goes over here */
+.color-2 {background: #EE7203;} 
+.color-3 {background: #6C6A6A;} 
+.color-4 {background: #2679C0;}
+.color-5 {background: #D82727;}
+
 
 /* Typography
 // ---------------------*/
-html, body {font-family: "Josefin Slab", serif;} /* change this */
+html, body {font-family: "Helvetica", serif;} /* change this */
 
 h1 {}
 h2 {}
