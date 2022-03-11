@@ -1,0 +1,45 @@
+.news-event {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.news-event-box {
+    background: #EE7203;
+    width: 30rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    border-radius: 8px;
+}
+
+.content {
+    background-color: white;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 8px;
+}
+
+p {
+    padding: 1rem;
+    word-wrap: break-word;
+}
+
+h2 {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.profile-picture {
+    width: 2.5rem;
+    float: left;
+    padding: 0.5rem  0.1rem 0 1rem;
+}
+
+.comment-input {
+    padding: 0 0 1rem 1rem;
+}
+
+#text-input0, #text-input1, #text-input2, #text-input3 {
+    width: 21.5rem;
+    margin-right: 0.5rem;
+}
+
+.post {
+    padding: 1rem;   
+}
