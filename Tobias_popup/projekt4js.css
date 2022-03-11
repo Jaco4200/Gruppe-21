@@ -1,0 +1,198 @@
+.dagsboks {
+ display: flex;
+   height: 200px;
+   width: 50px;
+   border: solid green 2px;
+   background-color: lightgreen;
+}
+
+#overlay {
+  color: white;
+  display: none; /* Hidden by default */
+  width: 375px; /* Full width (cover the whole page) */
+  height: 407px; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #EE7203; /* Black background with opacity */
+  z-index: 2;
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+
+#forberedelsespopup {
+  display: none; /* Hidden by default */
+  width: 50%; /* Full width (cover the whole page) */
+  height: auto; /* Full height (cover the whole page) */
+  background-color: #bebebe; /* Black background with opacity */
+  z-index: 2;
+  position: absolute;
+  margin-top: 87px;
+  left: 0;
+  right: 0;
+}
+
+#ekstramaterialepopup {
+  display: none; /* Hidden by default */
+  width: 50%; /* Full width (cover the whole page) */
+  height: auto; /* Full height (cover the whole page) */
+  background-color: #d3d3d3; /* Black background with opacity */
+  z-index: 2;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 87px;
+  left: 0;
+  right: 0;
+  padding-bottom: 5px;
+}
+
+.parent {
+  background-color: purple;
+}
+
+.forberedelse {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  padding: 5px;
+  background-color: #d3d3d3;
+  height: 50px;
+  width: 32%;
+  margin-left: 45px;
+  margin-right: 20px;
+  color: black;
+  border-radius: 5px;
+}
+
+.ekstramateriale {
+  display: inline-block;
+  padding: 5px;
+  background-color: #d3d3d3;
+  height: 50px;
+  width: 32%;
+  color: black;
+  border-radius: 5px;
+}
+
+.forberedelsematerialeheader {
+  font-size: 0.8em;
+  color: black;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.forberedelsebeskrivelse {
+    font-size: 0.7em;
+    color: black;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+#listeoverforberedelsesmateriale {
+  color: black;
+  font-size: 0.7em;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.undervisningsmaterialeheader {
+  font-size: 0.8em;
+  color: black;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.kassetilindhold {
+  display: block;
+  display: flex;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  padding: 15px;
+  background-color: #EE7203;
+  border-radius: 10px;
+  margin-left: 8px;
+  margin-right: 15px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.billedafikon {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.beskrivelseafmateriale {
+  font-size: 0.7em;
+  color: black;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.kassetillukkeikon {
+  display: inline-block;
+  align-items: center;
+  padding: 5px;
+}
+
+.underviserbilledekasse {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 55px;
+}
+
+.lukkeikon {
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.billedeafunderviser {
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.overskrift {
+  display: inline-block;
+}
+
+.Undervisernavn {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#linktilzoom {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.teksttilforberedelsesknap {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 18px;
+}
+
+.teksttilundervisningmaterialeknap {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 18px;
+}
+
+.teksttiloverskrift {
+  padding-left: 8px;
+}

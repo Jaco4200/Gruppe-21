@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>jsoperatoer og arrays</title>
+  <link rel="stylesheet" href="projekt4js.css">
+  <script src="projekt4js.js" defer></script>
+</head>
+
+<body>
+  <p class="testtekst">hello</p>
+  <div class="parent">
+    <div class="dagsboks" onmouseover="on()">
+      <div id="overlay" onmouseleave="off()">
+        <div class="overskrift">
+          <p class="teksttiloverskrift">Lena cristensen<br>e-mail: Lecr27364@edu.ucl.dk<br>Tid: 8:15 til 11:30<br>Lokale:B2:04-B2:48</p>
+        </div>
+        <div class="underviserbilledekasse">
+          <img class="billedeafunderviser" src="billeder/underviser1.png" alt="billedafunderviser">
+        </div>
+        <div class="kassetillukkeikon">
+          <img class="lukkeikon" src="billeder/lukkeikon.png" alt="lukoverlay" onclick="off()">
+        </div>
+        <div class="Undervisernavn">
+          <p>Plandetaljer for timen:
+            <br><br>Vi udarbejder user-flows
+            <br><br>Metoder og teorier:
+            <br>Userflow
+            <br>Paperprototyping
+            <br>Schneidermans 8 gyldne regler</p>
+        </div>
+        <p id="linktilzoom"></p>
+        <div class="forberedelse" onmouseover="on2()">
+          <div>
+            <p class="teksttilforberedelsesknap">Forberedelsesmateriale</p>
+          </div>
+        </div>
+        <div class="ekstramateriale" onmouseover="on3()">
+          <p class="teksttilundervisningmaterialeknap">Undervisningsmateriale</p>
+        </div>
+        <div id="forberedelsespopup" onmouseleave="off2()">
+          <h2 class="forberedelsematerialeheader">Forberedelsesmateriale</h2>
+          <p class="forberedelsebeskrivelse">Læs følgene til undervisningen:</p>
+          <p id="listeoverforberedelsesmateriale"></p>
+          <!--<ul id="forberedelsesliste">
+              <li id="listeelement1"><a href="test1.html">Test 1</a></li>
+              <li id="listeelement2"><a href="test2.html">Test 2</a></li>
+              <li id="listeelement3"><a href="test3.html">Test 3</a></li>
+            </ul> -->
+        </div>
+        <div id="ekstramaterialepopup" onmouseleave="off3()">
+          <h2 class="undervisningsmaterialeheader">Undervisningsmateriale</h2>
+          <div class="beskrivelseafmateriale">Slides til undervisningen</div>
+          <div class="kassetilindhold">
+            <a href="https://da.wikipedia.org/wiki/Hest" target="_blank">
+              <img class="billedafikon" src="billeder/275361548_5075465145850020_1234622837040690954_n.png" alt="filikon">
+            </a>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
