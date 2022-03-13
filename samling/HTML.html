@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+ <link rel="stylesheet" href="Styles.css">
+ <link rel="javascript" href="Javascriptsk.js">
+<meta charset="utf-8">
+<title>Style Guide</title>
+</head>
+<header>
+    <div id="headeer"><h2>Header</h2></div>
+</header>
+<body>
+    <div class="parent">
+        <div class="div1"> <h2>Week</h2> </div>
+        <div class="div2"><h2>Monday</h2> </div>
+        <div class="div3"><h2>Tuesday</h2> </div>
+        <div class="div4"><h2>Wednesday</h2> </div>
+        <div class="div5"><H2>Thursday</H2> </div>
+        <div class="div6"><h2>Friday</h2> </div>
+        <div class="div7"><h3>8:00</h3> </div>
+        <div class="div9"><h3>9:00</h3> </div>
+        <div class="div10"><h3>10:00</h3> </div>
+        <div class="div11"><h3>11:00</h3> </div>
+        <div class="div12"><h3>12:00</h3> </div>
+        <div class="div13"><h3>13:00</h3> </div>
+        <div class="div14"><h3>14:00</h3> </div>
+        <div class="div15"><h3>15:00</h3> </div>
+        <div class="div16"><h3>16:00</h3> </div>
+        <div class="div17"><h3>17:00</h3> </div>
+        <div class="div18"><h3>18:00</h3> </div>
+        <div class="div18"> </div>
+        <div class="div19"> </div>
+        <div class="div20"></div>
+        <div class="div21"></div>
+        <div class="div22"> </div>
+        <div class="div23"> </div>
+        <div class="div24"> </div>
+        <div class="div25"> </div>
+        <div class="div26"> </div>
+        <div class="div27"> </div>
+        <div class="div28"> </div>
+        <div class="div29"> </div>
+        <div id="div30" onmouseover="on()"> </div>
+        <div id="div31" onmouseover="on()"> </div>
+        <div id="div32" onmouseover="on()"> </div>
+        <div id="div33" onmouseover="on()"> </div>
+        <div id="div34" onmouseover="on()"> </div>
+        <div id="div35" onmouseover="on()"> </div>
+        <div id="div36" onmouseover="on()"> </div>
+        <div class="parent1">
+            <div id="overlay" onmouseleave="off()">
+              <div class="overskrift">
+                <p class="teksttiloverskrift">Lena cristensen<br>e-mail: Lecr27364@edu.ucl.dk<br>Tid: 8:15 til 11:30<br>Lokale:B2:04-B2:48</p>
+              </div>
+              <div class="underviserbilledekasse">
+                <img class="billedeafunderviser" src="billeder/underviser1.png" alt="billedafunderviser">
+              </div>
+              <div class="kassetillukkeikon">
+                <img class="lukkeikon" src="billeder/lukkeikon.png" alt="lukoverlay" onclick="off()">
+              </div>
+              <div class="Undervisernavn">
+                <p>Plandetaljer for timen:
+                  <br><br>Vi udarbejder user-flows
+                  <br><br>Metoder og teorier:
+                  <br>Userflow
+                  <br>Paperprototyping
+                  <br>Schneidermans 8 gyldne regler</p>
+              </div>
+              <p id="linktilzoom"></p>
+              <div class="forberedelse" onmouseover="on2()">
+                <div>
+                  <p class="teksttilforberedelsesknap">Forberedelsesmateriale</p>
+                </div>
+              </div>
+              <div class="ekstramateriale" onmouseover="on3()">
+                <p class="teksttilundervisningmaterialeknap">Undervisningsmateriale</p>
+              </div>
+              <div id="forberedelsespopup" onmouseleave="off2()">
+                <h2 class="forberedelsematerialeheader">Forberedelsesmateriale</h2>
+                <p class="forberedelsebeskrivelse">Læs følgene til undervisningen:</p>
+                <p id="listeoverforberedelsesmateriale"></p>
+                <!--<ul id="forberedelsesliste">
+                    <li id="listeelement1"><a href="test1.html">Test 1</a></li>
+                    <li id="listeelement2"><a href="test2.html">Test 2</a></li>
+                    <li id="listeelement3"><a href="test3.html">Test 3</a></li>
+                  </ul> -->
+              </div>
+              <div id="ekstramaterialepopup" onmouseleave="off3()">
+                <h2 class="undervisningsmaterialeheader">Undervisningsmateriale</h2>
+                <div class="beskrivelseafmateriale">Slides til undervisningen</div>
+                <div class="kassetilindhold">
+                  <a href="https://da.wikipedia.org/wiki/Hest" target="_blank">
+                    <img class="billedafikon" src="billeder/275361548_5075465145850020_1234622837040690954_n.png" alt="filikon">
+                  </a>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    //mit farve array
+    var myarr = ['lightgray', 'lightgreen', 'tomato', 'lightblue'];
+    //en variable til hver time på skemaet bliver lavet
+    let test = document.getElementById("div31");
+    let test2 = document.getElementById("div32");
+    let test3 = document.getElementById("div33");
+    let test4 = document.getElementById("div30");
+    let test5 = document.getElementById("div34");
+    let test6 = document.getElementById("div35");
+    let test7 = document.getElementById("div36");
+// den her funktion vil blive executed hver gang musen går over de forskellige divs
+test.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [0];
+
+    // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);
+test2.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [0];   
+
+  // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);
+test3.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [2];   
+
+  // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);
+test4.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [0];
+
+    // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);
+test5.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [1];
+
+    // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);  
+test6.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [1];
+
+    // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);
+test7.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [3];
+
+    // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);
+console.log("js is running :)");
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay", "forberedelsespopup", "ekstramaterialepopup").style.display = "none";
+}
+
+function on2() {
+  document.getElementById("forberedelsespopup").style.display = "inline-block";
+}
+
+function off2() {
+  document.getElementById("forberedelsespopup").style.display = "none";
+}
+
+function on3() {
+  document.getElementById("ekstramaterialepopup").style.display = "inline-block";
+}
+
+function off3() {
+  document.getElementById("ekstramaterialepopup").style.display = "none";
+}
+
+let numbers = ["https://www.interaction-design.org/literature/article/the-building-blocks-of-visual-design", "https://kl7.dk/moed-aben-og-jakkesaettet/", "https://christianstaal.com/category/psykologi-2/system-1-og-2", "https://christianstaal.com/category/psykologi-2/system-1-og-2"];
+
+let linkelement = "";
+
+numbers.forEach(myFunction);
+document.getElementById("listeoverforberedelsesmateriale").innerHTML = linkelement;
+
+function myFunction(næsteelement) {
+  linkelement += næsteelement + "<br>" + "<br>";
+}
+
+let onlineellerfysisk = "fysisk";
+
+if (onlineellerfysisk == "online") {
+  document.getElementById("linktilzoom").innerHTML = "Link til undervisning: https://zoom.us/";
+}
+
+else {
+    document.getElementById("linktilzoom").style.display = "none";
+}
+</script>      
+        
+</body>
+</script>
+</html>
