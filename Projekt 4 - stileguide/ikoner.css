@@ -1,0 +1,15 @@
+.farveoverskrift {
+    text-align: center;
+    font-size: 45px;
+    color: #000000;
+    margin-top: 25px;
+}
+
+.sectionSeperator {
+    position: relative; 
+    padding-top: 5px; 
+    margin: 0 auto; 
+    margin-left: 360px;
+    margin-right: 350px;
+    border-bottom: 1px solid #333333;
+}
