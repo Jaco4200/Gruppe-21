@@ -7,6 +7,11 @@ p{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15.2px;
 }
+p2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15.2px;
+        color: #d3d3d3;
+}
 h3{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1em;
@@ -25,7 +30,19 @@ h3{
     margin-left: 85px;
     margin-top: 200px;
     }
-
+    .parentk {
+        display: grid;
+        border-radius: 20px;
+        grid-template-columns: repeat(6, 220px);
+        grid-template-rows: repeat(12, 50px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0px;
+        height: 400px;
+        width: 75%;
+        margin-left: 85px;
+        margin-top: 40px;
+        }
 
 .div1 { grid-area: 1 / 1 / 2 / 2;
         border-color: black;
@@ -243,6 +260,21 @@ div#div36{ grid-area: 2 / 6 / 7 / 6;
                 margin-left: 800px;
                 margin-top: 131px;
               }
+              #overlayd1 {
+                color: white;
+                display: none; /* Hidden by default */
+                width: 375px; /* Full width (cover the whole page) */
+                height: 407px; /* Full height (cover the whole page) */
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #EE7203; /* Black background with opacity */
+                z-index: 2;
+                position: absolute;
+                margin-left: 600px;
+                margin-top: 131px;
+              }
                
                #forberedelsespopup {
                  display: none; /* Hidden by default */
@@ -305,8 +337,8 @@ div#div36{ grid-area: 2 / 6 / 7 / 6;
                  padding: 5px;
                  background-color: #d3d3d3;
                  height: 50px;
-                 width: 32%;
-                 margin-left: 45px;
+                 width: 34%;
+                 margin-left: 38px;
                  margin-right: 20px;
                  color: black;
                  border-radius: 5px;
@@ -319,8 +351,8 @@ div#div36{ grid-area: 2 / 6 / 7 / 6;
                 padding: 5px;
                 background-color: #d3d3d3;
                 height: 50px;
-                width: 32%;
-                margin-left: 45px;
+                width: 34%;
+                margin-left: 38px;
                 margin-right: 20px;
                 color: black;
                 border-radius: 5px;
@@ -331,7 +363,7 @@ div#div36{ grid-area: 2 / 6 / 7 / 6;
                  padding: 5px;
                  background-color: #d3d3d3;
                  height: 50px;
-                 width: 32%;
+                 width: 34%;
                  color: black;
                  border-radius: 5px;
                }
@@ -340,7 +372,7 @@ div#div36{ grid-area: 2 / 6 / 7 / 6;
                 padding: 5px;
                 background-color: #d3d3d3;
                 height: 50px;
-                width: 32%;
+                width: 34%;
                 color: black;
                 border-radius: 5px;
               }
@@ -655,11 +687,20 @@ div#div36{ grid-area: 2 / 6 / 7 / 6;
         .navbar a.active {
           background-color: #f57c0a;
           color: white;
-        }
-        .boxtop{
-                display: flex;
-                align-items: top;
-                background-color: #6c6a6a;
-                width: 1fr;
-                height: 80px;
-        }
+        }       
+        .button {
+                background-color: #d3d3d3;
+                border: none;
+                color: black;
+                padding: 10px;
+                max-width: 100%;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 10px;
+                max-height: 30px;
+                margin-top: 20px;
+              }
+              

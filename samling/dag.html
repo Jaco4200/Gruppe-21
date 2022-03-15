@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <title>Projekt 4</title>
 </head>
-<header style="color: #6c6a6a;">
+<header>
   <nav>        
     <div class="topnav">
       <img src=billeder/gay.png style="width:45px; height: 45px; margin-top: -3px;"></img>
       <a rel="startside" href="HTML.html"onmouseover="hover()">Startside</a>
       <a id="rum" href="#rum" onmouseover="hover()">Rum</a>
       <a href="#dashboards og projektrum">Dashboards og projektrum</a>
-      <a id="kalender" href="Kalender.html" onmouseover="hover()" >Kalender</a>
+      <a id="kalender" href="#kalender" onmouseover="hover()" >Kalender</a>
       <a href="#bib">bib.ucl.dk</a>
       <a href="#nemstudie">nemStudie.dk</a>
       <a href="#mitucl">mitucl.dk</a>
@@ -23,18 +23,16 @@
       <a href="#notifikationer">Notifikationer</a>
 
     </div>
-    <p id="myElementID">remove me</p>
   </nav>
 
 </header>
-<body style="background-color: #6c6a6a;">
-  <div class="parent">
+<body style="background-color: #6c6a6a; height: 1000px;">
+    <a href="dag.html" class="button">Dag</a>
+    <a href="Kalender.html" class="button">Uge</a>
+    <a href="måned.html" class="button">Måned</a>
+  <div class="parentk">
         <div class="div1"> <h2>Week 9</h2> </div>
-        <div class="div2"><h2>Monday</h2> </div>
-        <div class="div3"><h2>Tuesday</h2> </div>
-        <div class="div4"><h2>Wednesday</h2> </div>
-        <div class="div5"><h2>Thursday</h2> </div>
-        <div class="div6"><h2>Friday</h2> </div>
+        <div class="divd1" style="grid-area: 1 / 2 / 2 / 7; border-color: black; background-color: #d3d3d3; display: flex; justify-content: center; align-items: center; border: 1px; border-style: solid;"><h2>Wednesday</h2> </div>
         <div class="div7"><h3>8:00</h3> </div>
         <div class="div9"><h3>9:00</h3> </div>
         <div class="div10"><h3>10:00</h3> </div>
@@ -57,10 +55,9 @@
         <div class="div27"> </div>
         <div class="div28"> </div>
         <div class="div29"> </div>
-        <div id="div30"><p2>KRUT: User Flow 4<br>tid: 8:15 - 11:30<br>Lokale: B2.02 - B2.48<br><br><br><br>afsluttet</p2> </div>
-        <div id="div31"><p2>KRUT: User Flow 4<br>tid: 8:15 - 11:30<br>Lokale: B2.02 - B2.48<br><br><br><br>afsluttet</p2> </div>
-        <div id="div32"><p2>KRUT: User Flow 4<br>tid: 12:15 - 15:30<br>Lokale: B2.02 - B2.48<br><br><br><br>afsluttet</p2> </div>
-        <div id="div33" onmouseover="on()"><p2>KRUT: User Flow 4<br>tid: 8:15 - 11:30<br>Lokale: B2.02 - B2.48<br><br><br><br>aflyst</p2> 
+        <div id="divd2" style="grid-area: 2 / 2 / 6 / 7;
+        border-color: black; background-color: red; display: flex; justify-content: flex-start; align-items: center; border: 1px; border-style: solid;
+        margin: 10px; padding: 10px; "onmouseover="on()"><p2>KRUT: User Flow 4<br>tid: 8:15 - 11:30<br>Lokale: B2.02 - B2.48<br><br><br><br>aflyst</p2> 
             <div id="overlay" onmouseleave="off()">
               <div class="overskrift">
                 <p class="teksttiloverskrift">Lena cristensen<br>e-mail: Lecr27364@edu.ucl.dk<br>Tid: 8:15 til 11:30<br>Lokale:B2:04-B2:48</p>
@@ -92,6 +89,7 @@
                 <h2 class="forberedelsematerialeheader">Forberedelsesmateriale</h2>
                 <p class="forberedelsebeskrivelse">Læs følgene til undervisningen:</p>
                 <p id="listeoverforberedelsesmateriale"></p>
+
               </div>
               <div id="ekstramaterialepopup" onmouseleave="off3()">
                 <h2 class="undervisningsmaterialeheader">Undervisningsmateriale</h2>
@@ -105,137 +103,11 @@
               </div>
             </div>
         </div>
-        <div id="div34"><p2>KRUT: User Flow 4<br>tid: 10:00 - 11:30<br>Lokale: B2.02 - B2.48</p2> </div>
-        <div id="div35"> <p2>KRUT: User Flow 4<br>tid: 12:15 - 15:30<br>Lokale: B2.02 - B2.48<br><br><br><br>aktiv</p2> </div>
-        <div id="div36" onmouseover="ono()"><p2>KRUT: User Flow 2<br>Tid: 8:15 - 12:45<br>Lokale: - <br><br><br><br><br><br>Online</p2>  </p>
-          <div id="overlay1" onmouseleave="offo()">
-            <div class="overskrift">
-              <p class="teksttiloverskrift1">Lena cristensen<br>e-mail: Lecr27364@edu.ucl.dk<br>Tid: 8:15 til 11:30<br>Lokale:B2:04-B2:48</p>
-            </div>
-            <div class="underviserbilledekasse1">
-              <img class="billedeafunderviser" src="billeder/underviser1.png" alt="billedafunderviser">
-            </div>
-            <div class="kassetillukkeikon1">
-              <img class="lukkeikon" src="billeder/lukkeikon.png" alt="lukoverlay" onclick="offo()">
-            </div>
-            <div class="Undervisernavn1">
-              <p>Plandetaljer for timen:
-                <br><br>Vi udarbejder user-flows
-                <br><br>Metoder og teorier:
-                <br>Userflow
-                <br>Paperprototyping
-                <br>Schneidermans 8 gyldne regler</p>
-            </div>
-            <p id="linktilzoom1"></p>
-            <div class="forberedelse1" onmouseover="on2o()">
-              <div>
-                <p class="teksttilforberedelsesknap1">Forberedelsesmateriale</p>
-              </div>
-            </div>
-            <div class="ekstramateriale1" onmouseover="on3o()">
-              <p class="teksttilundervisningmaterialeknap1">Undervisningsmateriale</p>
-            </div>
-            <div id="forberedelsespopup1" onmouseleave="off2o()">
-              <h2 class="forberedelsematerialeheader1">Forberedelsesmateriale</h2>
-              <p class="forberedelsebeskrivelse1">Læs følgene til undervisningen:</p>
-              <p id="listeoverforberedelsesmateriale1"></p>
-            </div>
-            <div id="ekstramaterialepopup1" onmouseleave="off3o()">
-              <h2 class="undervisningsmaterialeheader1">Undervisningsmateriale</h2>
-              <div class="beskrivelseafmateriale1">Slides til undervisningen</div>
-              <div class="kassetilindhold1">
-                <a href="https://da.wikipedia.org/wiki/Hest" target="_blank">
-                  <img class="billedafikon" src="billeder/275361548_5075465145850020_1234622837040690954_n.png" alt="filikon">
-                </a>
-              </div>
-              </a>
-            </div>
-          </div>
-      </div> 
+        <div id="divd3" style="grid-area: 6 / 2 / 10 / 7;
+        border-color: black; background-color: green; display: flex; justify-content: flex-start; align-items: center; border: 1px; border-style: solid;
+        margin: 10px; padding: 10px;"> <p2>KRUT: User Flow 4<br>tid: 12:15 - 15:30<br>Lokale: B2.02 - B2.48<br><br><br><br>aktiv</p2> </div> 
     </div>
-        
-</div>
-<div class="news-event">
-  <!--nyheder--> 
-  <div class="news">
-    <h1>Nyheder</h1>
-      <div class="news-event-box">
-        <div class="content">
-          <img src="img/profilbillede-default.jpg" alt="Profilbillede" class="profile-picture"/>
-          <h2>NAVN</h2>
-          <p class="post">
-            Kære alle
-            <br>
-            Der afholdes studierådsmøde fredag d. 4. marts fra kl. 10.00-11.30. Vi mødes i lokale A4.06. De valgte repræsentanter 
-            har modtaget en dagsorden forud for mødet.
-          </p>
-          <div class="comment-input">
-            <input type="text" id="text-input0"/>
-            <button onclick="posting('text-input0', 'result0');" id="button">Send</button>
-          </div>
-          <div id="result0">
-          </div>
-        </div>
 
-        <div class="content">
-          <img src="img/profilbillede-default.jpg" alt="Profilbillede" class="profile-picture"/>
-          <h2>NAVN</h2>
-          <p class="post">
-            Kære alle
-            <br>
-            Der afholdes studierådsmøde fredag d. 4. marts fra kl. 10.00-11.30. Vi mødes i lokale A4.06. De valgte repræsentanter 
-            har modtaget en dagsorden forud for mødet.
-          </p>
-          <div class="comment-input">
-            <input type="text" id="text-input1"/>
-            <button onclick="posting('text-input1', 'result1');">Send</button>
-          </div>
-          <div id="result1">
-          </div>
-        </div>
-      </div>
-  </div>
-  
-  <!--events-->
-  <div class="event">
-    <h1>Eventkalender</h1>
-      <div class="news-event-box">
-        <div class="content">
-          <img src="img/profilbillede-default.jpg" alt="Profilbillede" class="profile-picture"/>
-          <h2>NAVN</h2>
-          <p class="post">
-            Hej allesammen
-            <br>
-            Der afholdes studierådsmøde fredag d. 4. marts fra kl. 10.00-11.30. Vi mødes i lokale A4.06. De valgte repræsentanter 
-            har modtaget en dagsorden forud for mødet.
-          </p>
-          <div class="comment-input">
-            <input type="text" id="text-input2"/>
-            <button onclick="posting('text-input2', 'result2');">Send</button>
-          </div>
-          <div id="result2">
-          </div>
-        </div>
-
-        <div class="content">
-          <img src="img/profilbillede-default.jpg" alt="Profilbillede" class="profile-picture"/>
-          <h2>NAVN</h2>
-          <p class="post">
-            Hej allesammen
-            <br>
-            Der afholdes studierådsmøde fredag d. 4. marts fra kl. 10.00-11.30. Vi mødes i lokale A4.06. De valgte repræsentanter 
-            har modtaget en dagsorden forud for mødet.
-          </p>
-          <div class="comment-input">
-            <input type="text" id="text-input3"/>
-            <button onclick="posting('text-input3', 'result3');">Send</button>
-          </div>
-          <div id="result3">
-          </div>
-        </div>
-      </div>
-  </div>
-</div>  
   </body>
 <script type="text/javascript">
     //mit farve array
@@ -243,7 +115,7 @@
     //en variable til hver time på skemaet bliver lavet
     let test = document.getElementById("div31");
     let test2 = document.getElementById("div32");
-    let test3 = document.getElementById("div33");
+    let test3 = document.getElementById("divd2");
     let test4 = document.getElementById("div30");
     let test5 = document.getElementById("div34");
     let test6 = document.getElementById("div35");
@@ -344,7 +216,7 @@ function off3() {
 function off3o() {
   document.getElementById("ekstramaterialepopup1").style.display = "none";
 }
-let numbers = ["https://www.interaction-design.org/article/the-building blocks-of-visual-design", "https://kl7.dk/moed-aben-og-jakkesaettet/","https://christianstaal.com/category/", "https://christianstaal.com/psykologi-2/system-1-og-2"];
+let numbers = ["https://www.interaction-design.org/literature/article/the-building-blocks-of-visual-design", "https://kl7.dk/moed-aben-og-jakkesaettet/", "https://christianstaal.com/category/psykologi-2/system-1-og-2", "https://christianstaal.com/category/psykologi-2/system-1-og-2"];
 
 let linkelement = "";
 

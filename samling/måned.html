@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+ <link rel="stylesheet" href="Styles.css">
+ <link rel="javascript" href="Javascriptsk.js">
+<meta charset="utf-8">
+<title>Projekt 4</title>
+</head>
+<header>
+  <nav>        
+    <div class="topnav">
+      <img src=billeder/gay.png style="width:45px; height: 45px; margin-top: -3px;"></img>
+      <a rel="startside" href="HTML.html"onmouseover="hover()">Startside</a>
+      <a id="rum" href="#rum" onmouseover="hover()">Rum</a>
+      <a href="#dashboards og projektrum">Dashboards og projektrum</a>
+      <a id="kalender" href="#kalender" onmouseover="hover()" >Kalender</a>
+      <a href="#bib">bib.ucl.dk</a>
+      <a href="#nemstudie">nemStudie.dk</a>
+      <a href="#mitucl">mitucl.dk</a>
+      <a href="#guide" style="margin-right: 265.2px">Guides</a>
+    </div>
+    <div class="navbar">
+      <img src="billeder/Lag 2.png" style="width: 45px; height: 45px; margin-top: -3px;"></img>
+      <a href="#beskeder">Beskeder</a>
+      <a href="#notifikationer">Notifikationer</a>
+
+    </div>
+  </nav>
+
+</header>
+<body style="background-color: #6c6a6a">
+    <a href="dag.html" class="button">Dag</a>
+    <a href="Kalender.html" class="button">Uge</a>
+    <a href="måned.html" class="button">Måned</a>
+    <img src="billeder/måned.png" style="width:88%; height: 800px; display: flex; justify-content: center; align-items: center;margin-left: 88px; margin-top: 40px;">
+
+  </body>
+<script type="text/javascript">
+    //mit farve array
+    var myarr = ['lightgray', 'lightgreen', 'tomato', 'lightblue'];
+    //en variable til hver time på skemaet bliver lavet
+    let test = document.getElementById("div31");
+    let test2 = document.getElementById("div32");
+    let test3 = document.getElementById("div33");
+    let test4 = document.getElementById("div30");
+    let test5 = document.getElementById("div34");
+    let test6 = document.getElementById("div35");
+    let test7 = document.getElementById("div36");
+// den her funktion vil blive executed hver gang musen går over de forskellige divs
+test.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [0];
+
+    // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);
+test2.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [0];   
+
+  // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);
+test3.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [2];   
+
+  // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);
+test4.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [0];
+
+    // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);
+test5.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [1];
+
+    // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);  
+test6.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [1];
+
+    // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);
+test7.addEventListener("mouseenter", function( event ) {
+  event.target.style.backgroundColor = myarr [3];
+
+    // reset tilbage til den originale farve
+  setTimeout(function() {
+    event.target.style.backgroundColor = "";
+  }, 700);
+}, false);
+console.log("js is running :)");
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+function ono() {
+  document.getElementById("overlay1").style.display = "block";
+}
+function off() {
+  document.getElementById("overlay", "forberedelsespopup1", "ekstramaterialepopup1").style.display = "none";
+}
+function offo() {
+  document.getElementById("overlay1", "forberedelsespopup1", "ekstramaterialepopup1").style.display = "none";
+}
+function on2() {
+  document.getElementById("forberedelsespopup").style.display = "inline-block";
+}
+function on2o() {
+  document.getElementById("forberedelsespopup1").style.display = "inline-block";
+}
+
+function off2() {
+  document.getElementById("forberedelsespopup").style.display = "none";
+}
+function off2o() {
+  document.getElementById("forberedelsespopup1").style.display = "none";
+}
+function on3() {
+  document.getElementById("ekstramaterialepopup").style.display = "inline-block";
+}
+function on3o() {
+  document.getElementById("ekstramaterialepopup1").style.display = "inline-block";
+}
+function off3() {
+  document.getElementById("ekstramaterialepopup").style.display = "none";
+}
+function off3o() {
+  document.getElementById("ekstramaterialepopup1").style.display = "none";
+}
+let numbers = ["https://www.interaction-design.org/literature/article/the-building-blocks-of-visual-design", "https://kl7.dk/moed-aben-og-jakkesaettet/", "https://christianstaal.com/category/psykologi-2/system-1-og-2", "https://christianstaal.com/category/psykologi-2/system-1-og-2"];
+
+let linkelement = "";
+
+numbers.forEach(myFunction);
+document.getElementById("listeoverforberedelsesmateriale").innerHTML = linkelement;
+numbers.forEach(myFunction);
+document.getElementById("listeoverforberedelsesmateriale1").innerHTML = linkelement;
+function myFunction(næsteelement) {
+  linkelement += næsteelement + "<br>" + "<br>";
+}
+
+let onlineellerfysisk = "fysisk";
+
+if (onlineellerfysisk == "online") {
+  document.getElementById("linktilzoom").innerHTML = "Link til undervisning: https://zoom.us/";
+}
+
+else {
+    document.getElementById("linktilzoom").style.display = "none";
+}
+let onlineellerfysisk1 = "online";
+
+if (onlineellerfysisk1 == "online") {
+  document.getElementById("linktilzoom1").innerHTML = "Link til undervisning: https://zoom.us/";
+}
+
+else {
+    document.getElementById("linktilzoom1").style.display = "none";
+}
+function posting(input, output) {
+    let element = document.getElementById(input);
+    let theResult = element.value;
+    element.value = "";
+    comments[output].push(theResult);
+
+    if (document.getElementById("button").onclick) {
+        alert("Send kommentar?");
+    } else {
+        alert("huh?");
+    }
+
+    document.getElementById(output).innerHTML = "";
+    for (let index = 0; index < comments[output].length; index++) {
+        document.getElementById(output).innerHTML += "<p>" + comments[output][index] + "</p>";
+    }
+}
+
+
+let comments = [];
+comments["result0"] = []
+comments["result1"] = []
+comments["result2"] = []
+comments["result3"] = []
+let i = 5;
+ 
+for (let i = 0; i < 10; i++) {
+  console.log("navbarloop");
+}
+ 
+// array (variable + funktion)
+var navbar = [10, "ten", true];
+(navbar[0]);
+ 
+let number = 2;
+ 
+// if-else
+if (number > 0){
+    console.log("ifWorking")
+}
+else {
+    console.log("elseWorking")
+}
+ 
+ 
+// Get the element you want to remove
+let element = document.getElementById("myElementID");
+element.parentNode.removeChild(element);;
+ 
+function hover() {
+ document.getElementById("kalender").style.background="#f57c0a";
+ document.getElementById("startside").style.background="#f57c0a";
+}
+ 
+const person = {fname:"John", lname:"Doe"};
+ 
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " ";
+}
+ 
+document.getElementById("demo").innerHTML = txt;
+
+</script>      
+        
+</body>
+</script>
+</html>
