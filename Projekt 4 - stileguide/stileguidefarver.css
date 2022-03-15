@@ -1,0 +1,95 @@
+html,body{
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.farveoverskrift {
+    text-align: center;
+    font-size: 45px;
+    color: #000000;
+    margin-top: 25px;
+}
+
+.sectionSeperator {
+    position: relative; 
+    padding-top: 5px; 
+    margin: 0 auto; 
+    margin-left: 360px;
+    margin-right: 350px;
+    border-bottom: 1px solid #333333;
+}
+
+.farver {
+    margin-left: 150px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 30px;
+    float: left;
+}
+
+img {
+    border-radius: 40%;
+}
+
+.fk{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.tekst{
+    text-align: center;
+    font-size: 16px;
+    float: left;
+    margin-top: 50px;
+    padding-left: 20px;
+    display:flex;
+}
+
+.tekst1{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 170px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.tekst2{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 95px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.tekst3{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 100px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.tekst4{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 100px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.tekst5{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 100px;
+    display: flex;
+    padding-left: 20px;
+}
