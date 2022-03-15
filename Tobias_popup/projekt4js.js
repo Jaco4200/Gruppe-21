@@ -35,40 +35,10 @@ function myFunction(næsteelement) {
   linkelement += næsteelement + "<br>" + "<br>";
 }
 
-let onlineellerfysisk = "fysisk";
+let onlineellerfysisk = "online";
 
 if (onlineellerfysisk == "online") {
   document.getElementById("linktilzoom").innerHTML = "Link til undervisning: https://zoom.us/";
+} else {
+  document.getElementById("linktilzoom").style.display = "none";
 }
-
-else {
-    document.getElementById("linktilzoom").style.display = "none";
-}
-
-//<if (this.getField("Vendor_name").value == "Other" || this.getField("Vendor_name").value == "FICA"){      //replace "dropdown" with the name of the dropfield
-//event.target.display = display.visible;
-//}
-//else{
-//event.target.display = display.hidden;
-//}
-
-
-
-
-//let forberedelseselementer = ["https://kl7.dk/moed-aben-og-jakkesaettet/", "https://www.interaction-design.org/literature/article/the-building-blocks-of-visual-design"];
-
-//function printlinks() {
-  //let p = document.getElementById('teksttilliste');
-
-  //for (i = 0; i < forberedelseselementer.length; i++)
-   //p.innerHTML += forberedelseselementer[i] + ", ";
-//}
-//let forberedelseselementer = [document.getElementById("listeelement1"), document.getElementById("listeelement2"), document.getElementById("listeelement3")];
-
-//function udskrivListe()
-
-//function hideforberedelsesbox() {
-//if (document.getElementById("overlay").style.display == "none") {
-//document.getElementById("forberedelsespopup").style.display = "none";
-//}
-//}

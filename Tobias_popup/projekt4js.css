@@ -1,21 +1,21 @@
 .dagsboks {
- display: flex;
-   height: 200px;
-   width: 50px;
-   border: solid green 2px;
-   background-color: lightgreen;
+  display: flex;
+  height: 200px;
+  width: 50px;
+  border: solid green 2px;
+  background-color: lightgreen;
 }
 
 #overlay {
   color: white;
-  display: none; /* Hidden by default */
-  width: 375px; /* Full width (cover the whole page) */
-  height: 407px; /* Full height (cover the whole page) */
+  display: none;
+  width: 375px;
+  height: 407px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #EE7203; /* Black background with opacity */
+  background-color: #EE7203;
   z-index: 2;
   position: absolute;
   margin-left: 70px;
@@ -23,10 +23,10 @@
 }
 
 #forberedelsespopup {
-  display: none; /* Hidden by default */
-  width: 50%; /* Full width (cover the whole page) */
-  height: auto; /* Full height (cover the whole page) */
-  background-color: #bebebe; /* Black background with opacity */
+  display: none;
+  width: 50%;
+  height: auto;
+  background-color: #bebebe;
   z-index: 2;
   position: absolute;
   margin-top: 87px;
@@ -35,10 +35,10 @@
 }
 
 #ekstramaterialepopup {
-  display: none; /* Hidden by default */
-  width: 50%; /* Full width (cover the whole page) */
-  height: auto; /* Full height (cover the whole page) */
-  background-color: #d3d3d3; /* Black background with opacity */
+  display: none;
+  width: 50%;
+  height: auto;
+  background-color: #d3d3d3;
   z-index: 2;
   position: absolute;
   margin-left: 50%;
@@ -48,7 +48,7 @@
   padding-bottom: 5px;
 }
 
-.parent1 {
+.parent {
   background-color: purple;
 }
 
@@ -85,11 +85,11 @@
 }
 
 .forberedelsebeskrivelse {
-    font-size: 0.7em;
-    color: black;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
+  font-size: 0.7em;
+  color: black;
+  padding-left: 8px;
+  padding-right: 8px;
+}
 
 #listeoverforberedelsesmateriale {
   color: black;
